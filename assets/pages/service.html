@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+     <link rel="shortcut icon" href="../icons/hyundai.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "pFZL8JJbHNpvrlURh",
+      });
+   })();
+</script>
+    <title>Service</title>
+</head>
+<body>
+    <div class="header">
+        <header class="page-header">
+            <div class="topbar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="hyundai" srcset="" id="logo-img">
+            </div>
+            <div class="navbar">
+               <nav class="main-nav">
+                <a href="../../index.html"  class="nav-icon">Homepage</a>
+                <a href="#footer" class="nav-icon">Contact</a>
+                <a href="assets/pages/service.html" class="nav-icon" ">Service</a>
+               </nav>
+            </div>
+        </div>
+        </header>
+    </div>
+   
+    <div class="form-page">
+        <form id="reservationForm">
+            <fieldset>
+                <div class="section-label">Reservation</div>
+               <h3>Prendre rendez-vous</h3>
+               
+               <div id="messageBox" style="display: none; margin-bottom: 1rem; padding: 1rem; border-radius: 18px;" role="alert"></div>
+               
+               <label for="nomPrenom">Nom et Prenom : </label>
+               <input type="text" name="Uname" id="Uname" required placeholder="Votre Nom et Prenom">
+               
+               <label for="email">Email : </label>
+               <input type="email" name="mail" id="mail" required placeholder="Votre Email">
+               
+               <label for="service">Service : </label>
+               <div class="service-option">
+                <label class="service-option">
+                    <input type="radio" name="service" value="serviceRapide" required><span>Service Rapide</span>
+                </label>
+                <label class="service-option">
+                    <input type="radio" name="service" value="vdiangeAuto"><span>Vidange Boite auto</span>
+                </label>
+                <label class="service-option">
+                    <input type="radio" name="service" value="tolerie"><span>Tôlerie et peinture</span>
+                </label>
+                <label class="service-option">
+                    <input type="radio" name="service" value="mechAuto"><span>Mechanique Auto</span>
+                </label>
+                <label class="service-option">
+                    <input type="radio" name="service" value="diagnostic"><span>Diagnostic & Électricité Auto</span>
+                </label>
+               </div>
+               
+               <div class="phone">
+                <label for="phone">Votre Numero : </label>
+                <input type="tel" name="phone" id="phone" placeholder="+216 20 222 222" required>
+               </div>
+               
+               <div class="date">
+                <label for="date">Date : </label>
+                <input type="date" name="date" id="date" required>
+               </div>
+               
+               <div class="time">
+                <label for="time">Heure : </label>
+                <input type="time" name="time" id="time" required>
+               </div>
+               
+               <input type="hidden" name="csrf_token" id="csrfToken">
+               
+               <div class="btn">
+                <input type="submit" value="Reserver maintenant" id="submit-btn">
+               </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="footer-page">
+        <footer id="footer">
+            <div class="social-media">
+                <a href="#" class="fa fa-instagram">Instagram</a>
+                <a href="#" class="fa fa-facebook">Facebook</a>
+                <a href="#" class="fa fa-whatsapp">Whatsapp</a>
+            </div>
+            <div class="mail">
+                <ul>
+                    <li>Email : service.hyundai.manouba@gmail.com</li>
+                    <li>Phone : 71 534 964</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="/assets/app/script.js"></script>
+</body>
+</html>
